@@ -28,5 +28,4 @@
   - [git submodule sync --recursive, Linking submodules]
   - [git submodule update, Updating submodules]
   - [source ./installers/install-pyenv-and-pythons.sh, Install pyenv and python versions with its dependencies]
-  - [git config --global include.path ~/.gitalias.txt, Add GitAlias]
   - [source ./installers/install-vim.sh, Install vim and its dependencies]
