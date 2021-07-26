@@ -331,33 +331,29 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'ycm-core/YouCompleteMe'
 Plugin 'hashivim/vim-terraform'
+Plugin 'sainnhe/sonokai'
+Plugin 'junegunn/vim-easy-align'
+Plugin 'tpope/vim-fireplace', { 'for': 'clojure' }
+Plugin 'will133/vim-dirdiff'
+Plugin 'rdnetto/YCM-Generator', { 'branch': 'stable' }
+Plugin 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plugin 'junegunn/fzf.vim'
+Plugin 'https://github.com/sjl/badwolf/'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-rhubarb'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'Yggdroot/indentLine'
+Plugin 'janko/vim-test'
+Plugin 'airblade/vim-rooter'
+Plugin 'SirVer/ultisnips'
+Plugin 'kristijanhusak/vim-carbon-now-sh'
+Plugin 'preservim/nerdcommenter'
+Plugin 'michaeljsmith/vim-indent-object'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'lambdalisue/battery.vim'
+Plugin 'preservim/nerdtree'
 call vundle#end()
-
-" Vim Plug {{{
-call plug#begin('~/.vim/plugged')
-Plug 'sainnhe/sonokai'
-Plug 'junegunn/vim-easy-align'
-Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
-Plug 'will133/vim-dirdiff'
-Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
-Plug 'https://github.com/sjl/badwolf/'
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-rhubarb'
-Plug 'nathanaelkane/vim-indent-guides'
-Plug 'Yggdroot/indentLine'
-Plug 'janko/vim-test'
-Plug 'airblade/vim-rooter'
-Plug 'SirVer/ultisnips'
-Plug 'kristijanhusak/vim-carbon-now-sh'
-Plug 'preservim/nerdcommenter'
-Plug 'michaeljsmith/vim-indent-object'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'lambdalisue/battery.vim'
-Plug 'preservim/nerdtree'
-call plug#end()
 
 " Mappings for CoCList
 " Show all diagnostics.

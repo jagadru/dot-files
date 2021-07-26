@@ -1,0 +1,32 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+      force: true
+    stdin: true
+    stout: true
+    stderr: true
+
+- clean: ['~', '~/.config']
+
+- link:
+    ~/.vimrc: vimrc
+    ~/.bashrc: bashrc
+    ~/.gitignore_global: gitignore_global
+    ~/.vimrc: vimrc
+    ~/.zprofile: zprofile
+    ~/.zshrc: zshrc
+    ~/.Brewfile: Brewfile
+    ~/.aliases: aliases
+    ~/.gitalias.txt: gitalias/gitalias.txt
+    ~/.gitconfig: gitconfig
+    ~/.tmux.conf: myalacritty/tmux.conf
+    ~/.config/alacritty/alacritty.yml: myalacritty/alacritty.yml
+
+- shell:
+  - [source ./installers/check_brew_install.sh, Install brew and its dependencies]
+  - [git submodule sync --recursive, Linking submodules]
+  - [git submodule update, Updating submodules]
+  - [source ./installers/install-pyenv-and-pythons.sh, Install pyenv and python versions with its dependencies]
+  - [git config --global include.path ~/.gitalias.txt, Add GitAlias]
+  - [source ./installers/install-vim.sh, Install vim and its dependencies]

@@ -1,3 +1,4 @@
+alias dot-bot="/Users/jagadrub/dev/dot-files/.install"
 alias gst="git status"
 alias q="exit"
 
