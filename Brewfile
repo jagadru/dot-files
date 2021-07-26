@@ -29,7 +29,7 @@ brew "jq"
 brew "jsonpp"
 brew "kompose"
 brew "llvm"
-brew "macvim", link: false
+brew "vim", link: true 
 brew "minikube"
 brew "node"
 brew "nvm"
