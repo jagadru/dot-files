@@ -1,0 +1,9 @@
+alias gst="git status"
+alias q="exit"
+
+# LS Setup
+alias ls="/bin/ls -G"
+alias l="ls"
+alias ll="ls -l"
+alias la="ls -a"
+alias lla="ls -la"

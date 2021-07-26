@@ -1,0 +1,12 @@
+[credential]
+	helper = store
+[user]
+	useConfigOnly = true
+	email = jagadrub@gmail.com
+	name = Julian A. Garcia de Rubertis
+[core]
+	editor = vim
+[include]
+	path = /Users/jagadrub/.gitalias.txt
+[merge]
+	conflictstyle = diff3

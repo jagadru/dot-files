@@ -1,0 +1,195 @@
+background_opacity: 1
+window:
+  startup_mode: Fullscreen 
+  dimensions:
+    columns: 150
+    lines: 50
+  padding:
+    x: 10
+    y: 10
+  dynamic_padding: true
+  decorations: buttonless
+scrolling:
+  history: 10000
+  multiplier: 40
+key_bindings:
+  - key: W
+    mods: Command
+    action: ToggleFullscreen
+  - key: 'N'
+    mods: Command|Shift
+    action: SpawnNewInstance
+  - key: F
+    mods: Command|Shift
+    action: ToggleFullscreen
+  - key: Equals
+    mods: Command|Shift
+    action: IncreaseFontSize
+  - key: Minus
+    mods: Command|Shift
+    action: DecreaseFontSize
+  - key: Back
+    mods: Super
+    chars: "\x15"
+  - key: Back
+    mods: Control
+    chars: "\x17"
+  - key: Back
+    mods: Alt
+    chars: "\ed"
+  - key: Left
+    mods: Super
+    chars: "\e[1;5D"
+  - key: Right
+    mods: Super
+    chars: "\e[1;5C"
+  - key: Left
+    mods: Control
+    chars: "\e[1;5D"
+  - key: Right
+    mods: Control
+    chars: "\e[1;5C"
+  - key: Left
+    mods: Alt
+    chars: "\e[1;5D"
+  - key: Right
+    mods: Alt
+    chars: "\e[1;5C"
+  - key: Space
+    mods: Command|Control
+    action: ToggleViMode
+  - key: F
+    mods: Option
+    chars: "\x02/"
+  - key: Left
+    mods: Command|Option
+    chars: "\x02p"
+  - key: Right
+    mods: Command|Option
+    chars: "\x02n"
+  - key: Left
+    mods: Command|Shift
+    chars: "\x02p"
+  - key: Right
+    mods: Command|Shift
+    chars: "\x02n"
+  - key: Up
+    mods: Command|Option
+    chars: "\x02k"
+  - key: Down
+    mods: Command|Option
+    chars: "\x02j"
+  - key: F
+    mods: Option
+    chars: "\x02/"
+  - key: Key1
+    mods: Command
+    chars: "\x021"
+  - key: Key2
+    mods: Command
+    chars: "\x022"
+  - key: Key3
+    mods: Command
+    chars: "\x023"
+  - key: Key4
+    mods: Command
+    chars: "\x024"
+  - key: Key5
+    mods: Command
+    chars: "\x025"
+  - key: Key6
+    mods: Command
+    chars: "\x026"
+  - key: Key7
+    mods: Command
+    chars: "\x027"
+  - key: Key8
+    mods: Command
+    chars: "\x028"
+  - key: Key9
+    mods: Command
+    chars: "\x029"
+  - { key: 10, mods: Alt, chars: "\\" }
+  # barra invertida `\`
+  - { key: 18, mods: Alt, chars: "|" }
+  # barra vertical `|`
+  - { key: Key2, mods: Alt, chars: "@" }
+  # arroba `@`
+  - { key: Key3, mods: Alt, chars: "#" }
+  # almohadilla/cardinalidad `#`
+  - { key: Key6, mods: Alt, chars: "¬" }
+  # negación en lógica `¬`
+  - { key: 39, mods: Alt, chars: "{" }
+  # abre llaves `{`
+  - { key: 42, mods: Alt, chars: "}" }
+  # cierra llaves `}`
+  - { key: 33, mods: Alt, chars: "[" }
+  # abre corchetes `[`
+  - { key: 30, mods: Alt, chars: "]" }
+  # cierra corchetes `]`
+font:
+  size: 12
+  normal:
+    family: Menlo
+    style: Regular
+  bold:
+    family: Menlo
+    style: Bold
+  italic:
+    family: Menlo
+    style: Italic
+custom_cursor_colors: true
+colors:
+  # Default colors
+  primary:
+    background: '#2c2c2c'
+    foreground: '#d6d6d6'
+
+    dim_foreground: '#dbdbdb'
+    bright_foreground: '#d9d9d9'
+    dim_background: '#202020' # not sure
+    bright_background: '#3a3a3a' # not sure
+
+  # Cursor colors
+  cursor:
+    text: '#2c2c2c'
+    cursor: '#d9d9d9'
+
+  # Normal colors
+  normal:
+    black: '#1c1c1c'
+    red: '#bc5653'
+    green: '#909d63'
+    yellow: '#ebc17a'
+    blue: '#7eaac7'
+    magenta: '#aa6292'
+    cyan: '#86d3ce'
+    white: '#cacaca'
+
+  # Bright colors
+  bright:
+    black: '#636363'
+    red: '#bc5653'
+    green: '#909d63'
+    yellow: '#ebc17a'
+    blue: '#7eaac7'
+    magenta: '#aa6292'
+    cyan: '#86d3ce'
+    white: '#f7f7f7'
+
+  # Dim colors
+  dim:
+    black: '#232323'
+    red: '#74423f'
+    green: '#5e6547'
+    yellow: '#8b7653'
+    blue: '#556b79'
+    magenta: '#6e4962'
+    cyan: '#5c8482'
+    white: '#828282'
+shell:
+  program: /bin/zsh
+  args:
+    - '-l'
+    - '-c'
+    - tmux attach || tmux
