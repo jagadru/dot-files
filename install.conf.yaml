@@ -20,8 +20,8 @@
     ~/.aliases: aliases
     ~/.gitalias.txt: git/gitalias.txt
     ~/.gitconfig: git/gitconfig
-    ~/.tmux.conf: myalacritty/tmux.conf
-    ~/.config/alacritty/alacritty.yml: myalacritty/alacritty.yml
+    ~/.tmux.conf: tmux.conf
+    ~/.config/alacritty/alacritty.yml: alacritty.yml
 
 - shell:
   - [source ./installers/check_brew_install.sh, Install brew and its dependencies]
