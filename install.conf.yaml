@@ -10,18 +10,17 @@
 - clean: ['~', '~/.config']
 
 - link:
-    ~/.vimrc: vimrc
-    ~/.bashrc: bashrc
+    ~/.vimrc: vim/vimrc
+    ~/.bashrc: terminal/bashrc
     ~/.gitignore_global: git/gitignore_global
-    ~/.vimrc: vimrc
-    ~/.zprofile: zprofile
-    ~/.zshrc: zshrc
+    ~/.zprofile: terminal/zprofile
+    ~/.zshrc: terminal/zshrc
     ~/.Brewfile: Brewfile
-    ~/.aliases: aliases
+    ~/.aliases: terminal/aliases
     ~/.gitalias.txt: git/gitalias.txt
     ~/.gitconfig: git/gitconfig
-    ~/.tmux.conf: tmux.conf
-    ~/.config/alacritty/alacritty.yml: alacritty.yml
+    ~/.tmux.conf: terminal/tmux.conf
+    ~/.config/alacritty/alacritty.yml: terminal/alacritty.yml
 
 - shell:
   - [source ./installers/check_brew_install.sh, Install brew and its dependencies]
