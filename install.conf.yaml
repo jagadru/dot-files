@@ -12,14 +12,14 @@
 - link:
     ~/.vimrc: vimrc
     ~/.bashrc: bashrc
-    ~/.gitignore_global: gitignore_global
+    ~/.gitignore_global: git/gitignore_global
     ~/.vimrc: vimrc
     ~/.zprofile: zprofile
     ~/.zshrc: zshrc
     ~/.Brewfile: Brewfile
     ~/.aliases: aliases
-    ~/.gitalias.txt: gitalias/gitalias.txt
-    ~/.gitconfig: gitconfig
+    ~/.gitalias.txt: git/gitalias.txt
+    ~/.gitconfig: git/gitconfig
     ~/.tmux.conf: myalacritty/tmux.conf
     ~/.config/alacritty/alacritty.yml: myalacritty/alacritty.yml
 
