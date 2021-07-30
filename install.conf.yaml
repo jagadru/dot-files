@@ -3,9 +3,15 @@
       create: true
       relink: true
       force: true
-    stdin: true
-    stout: true
-    stderr: true
+    brewfile:
+      stdout: true
+      stderr: true
+    git:
+      stdout: true
+      stderr: true
+    shell:
+      stdout: true
+      stderr: true
 
 - clean: ['~', '~/.config']
 
@@ -22,9 +28,20 @@
     ~/.tmux.conf: terminal/tmux.conf
     ~/.config/alacritty/alacritty.yml: terminal/alacritty.yml
 
+- brewfile:
+    file: Brewfile
+
+- git:
+    '~/.vim/bundle/Vundle.vim':
+        url: 'https://github.com/VundleVim/Vundle.vim.git'
+        description: 'Vundle Vim'
+    '~/.vim/bundle/YouCompleteMe':
+        url: 'https://github.com/ycm-core/YouCompleteMe'
+        description: 'YouCompleteMe'
+    '~/.oh-my-zsh/custom/themes/powerlevel10k':
+        url: 'https://github.com/romkatv/powerlevel10k.git'
+        description: 'oh my zsh - powerlevel10k'
+
 - shell:
-  - [source ./installers/check_brew_install.sh, Install brew and its dependencies]
-  - [git submodule sync --recursive, Linking submodules]
-  - [git submodule update, Updating submodules]
   - [source ./installers/install-pyenv-and-pythons.sh, Install pyenv and python versions with its dependencies]
   - [source ./installers/install-vim.sh, Install vim and its dependencies]

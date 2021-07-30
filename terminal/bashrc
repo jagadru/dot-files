@@ -1,6 +1,6 @@
 export TERM="xterm-256color"
 export FZF_DEFAULT_COMMAND='rg --files'
-export FZF_DEFAULT_OPTS='-m --height 50% --border' 
+export FZF_DEFAULT_OPTS='-m --height 50% --border'
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 # bash completion for completion                           -*- shell-script -*-
@@ -306,3 +306,5 @@ fi
 # ex: ts=4 sw=4 et filetype=sh
 export PYTHONDONTWRITEBYTECODE=1
 
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
