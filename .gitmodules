@@ -4,7 +4,7 @@
 	ignore = dirty
 [submodule "dotbot-brewfile"]
 	path = dotbot-brewfile
-	url = https://github.com/sobolevn/dotbot-brewfile.git
+	url = https://github.com/jagadru/dotbot-brewfile
 [submodule "dotbot-git"]
 	path = dotbot-git
 	url = https://github.com/DrDynamic/dotbot-git.git
