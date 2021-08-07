@@ -308,3 +308,5 @@ export PYTHONDONTWRITEBYTECODE=1
 
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+
+export CLUSTER_ID=$(security find-generic-password -a ${USER} -s cluster_id_eks -w) 

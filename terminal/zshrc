@@ -98,3 +98,4 @@ export PYTHONDONTWRITEBYTECODE=1
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
+export CLUSTER_ID=$(security find-generic-password -a ${USER} -s cluster_id_eks -w)
