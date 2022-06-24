@@ -1463,3 +1463,4 @@
   lfiles = !"f() { git diff-tree --no-commit-id --name-only -r $(git rev-parse HEAD);}; f"
   tree = !"f() { git log --oneline --decorate --all --graph ;}; f"
   sb = !"f() { git for-each-ref --format='%(refname:short)' refs/heads | fzf | xargs git checkout ;}; f"
+  myc = !"f() { git log --left-right --graph --cherry-pick --oneline;}; f"
