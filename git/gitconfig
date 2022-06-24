@@ -10,3 +10,5 @@
 	path = /Users/jagadrub/.gitalias.txt
 [merge]
 	conflictstyle = diff3
+[init]
+	defaultBranch = main
